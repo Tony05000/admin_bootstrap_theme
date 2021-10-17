@@ -1,0 +1,19 @@
+@import 'vendor/reboot';
+@import 'vendor/mixins';
+@import 'vendor/bootstrap';
+@import 'variables';
+@import 'sidebar-menu';
+@import 'topbar-menu';
+@import 'main-container';
+
+::-webkit-scrollbar { width: 8px; }
+
+::-webkit-scrollbar-track{
+    background: $scrollbarBgColor;
+    padding: 1px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: $scrollbarColor;
+    border-radius: 8px;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="topbar-menu" id="topbar-menu">
+        <button class="menu-btn" type="button" aria-label="Menu" aria-controls="navigation" id="sidebar-menu-collapse">
+            <span class="menu-btn__block">
+              <span class="menu-btn__inner"></span>
+            </span>
+          </button>
+
+        <div class="d-flex">
+        <!-- website preview -->
+        <a href="" 
+           class="btn btn-dark d-flex align-items-center me-4" 
+           target="_blank"
+           data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ouvrir le site dans un nouvel onglet">
+            <span class="material-icons">
+                open_in_new
+            </span>
+        </a>
+        <!-- website preview -->
+
+        <!-- account dropdown -->
+        <div class="dropdow">
+            <a class="btn btn-dark dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-icons me-2">
+                    account_circle
+                    </span> compte
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="text-secondary dropdown-item d-flex align-items-center justify-content-between" href="#"> <span class="material-icons">
+                settings
+                </span> Parametre</a></li>
+                <li><hr class="dropdown-divider"></li>
+              <li><a class="text-danger dropdown-item d-flex align-items-center justify-content-between" href="#">
+                <span class="material-icons">
+                    logout
+                    </span>  
+                Déconnexion
+    
+              </a></li>
+            </ul>
+          </div>
+        <!-- account dropdown -->   
+        </div>       
+    </div>
+
+    <div class="sidebar-menu" id="sidebar-menu">
+        <h1 class="h5 mt-3 text-center text-light">website.fr admin</h1>
+        <nav class="sidebar-menu__nav p-1">
+            <ul class="pe-3 ps-2">  
+                <li><strong class="text-secondary lead">Commentaire</strong></li>           
+                <li class="d-flex bg-transparent align-items-center justify-content-between">
+                    <a href="" class="btn btn-secondary mt-1 text-start w-100 d-block position-relative">
+                        a valider
+                        <span class="position-absolute shadow top-50 start-100 translate-middle badge rounded-circle bg-danger"><strong>5</strong></span>
+                    </a> 
+                </li>
+                <li class="d-flex bg-transparent align-items-center justify-content-between">
+                    <a href="" class="btn btn-secondary mt-1 text-start w-100 d-block position-relative">
+                        liste
+                        
+                    </a> 
+                </li>
+                <li class="d-flex bg-transparent align-items-center justify-content-between">
+                    <a href="" class="btn btn-secondary mt-1 text-start w-100 d-block position-relative">
+                        ajouter
+                        
+                    </a> 
+                </li>
+            </ul>   
+            
+        </nav>
+    </div>
+
+    <div id="clearfix"></div>
+
+    <div class="main-container" id="main-container">
+        <div class="table-responsive shadow">
+            <table class="table table-borderless mb-0 table-striped bg-white table-hover">
+                <thead class="text-secondary">
+                    <tr>
+                        <th></th>
+                        <th><strong>Name</strong></th>
+                        <th><strong>Mail</strong> </th>
+                        <th><strong>Phone</strong></th>
+                        <th><strong>Address</strong></th>
+                        <th><strong>City</strong></th>
+                        <th><strong>Zipcode</strong></th>
+                        <th><strong>State</strong></th>
+                        <th><strong>Editer</strong></th>
+                        <th><strong>Supprimer</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Mark</td>
+                        <td>mail@mail.com</td>
+                        <td>0521548785</td>
+                        <td>1 rue de la paix</td>
+                        <td>ville</td>
+                        <td>05123</td>
+                        <td>activé</td>
+                        <td>
+                            <a href="" class="btn"><span class="material-icons text-primary">
+                                edit_note
+                                </span></a>
+                        </td>
+                        <td>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirmDelete">
+                                <span class="material-icons text-danger">
+                                    delete_forever
+                                </span>
+                            </button>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>  
+    </div>
+
+    <div class="modal fade" id="confirmDelete" tabindex="-1" aria-labelledby="confirmDeleteLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-danger" id="confirmDeleteLabel">Confirmer la suppression</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="lead text-danger">Voulez vous supprimer : item ?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary me-3" data-bs-dismiss="modal">Non</button>
+              <button type="button" class="btn btn-danger d-flex align-items-center">
+                <span class="material-icons text-light">
+                    delete_forever
+                    </span> supprimer
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="./Javascript/bootstrap.min.js"></script>
+    <script src="./Javascript/app.js"></script>
+    <script src="./Javascript/bar-menu.js"></script>
+</body>
+</html>

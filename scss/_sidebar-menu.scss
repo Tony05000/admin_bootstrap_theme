@@ -1,0 +1,16 @@
+.sidebar-menu {
+    position: fixed;
+    width: 250px;
+    background: $sidebarMenuBgColor;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .3s;
+    z-index: 2;
+}
+
+.sidebar-menu__nav {
+    position: relative;
+    height: 90%;
+    overflow-y: auto;
+}
