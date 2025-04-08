@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <div class="topbar-menu" id="topbar-menu">
@@ -22,28 +22,20 @@
            class="btn btn-dark d-flex align-items-center me-4" 
            target="_blank"
            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ouvrir le site dans un nouvel onglet">
-            <span class="material-icons">
-                open_in_new
-            </span>
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link-icon lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
         </a>
         <!-- website preview -->
 
         <!-- account dropdown -->
         <div class="dropdow">
             <a class="btn btn-dark dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="material-icons me-2">
-                    account_circle
-                    </span> compte
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user-round-icon lucide-circle-user-round"><path d="M18 20a6 6 0 0 0-12 0"/><circle cx="12" cy="10" r="4"/><circle cx="12" cy="12" r="10"/></svg> <span class="ms-2">Compte</span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="text-secondary dropdown-item d-flex align-items-center justify-content-between" href="#"> <span class="material-icons">
-                settings
-                </span> Parametre</a></li>
+              <li><a class="text-secondary dropdown-item d-flex align-items-center justify-content-between" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-cog-icon lucide-user-cog"><circle cx="18" cy="15" r="3"/><circle cx="9" cy="7" r="4"/><path d="M10 15H6a4 4 0 0 0-4 4v2"/><path d="m21.7 16.4-.9-.3"/><path d="m15.2 13.9-.9-.3"/><path d="m16.6 18.7.3-.9"/><path d="m19.1 12.2.3-.9"/><path d="m19.6 18.7-.4-1"/><path d="m16.8 12.3-.4-1"/><path d="m14.3 16.6 1-.4"/><path d="m20.7 13.8 1-.4"/></svg> Parametre</a></li>
                 <li><hr class="dropdown-divider"></li>
               <li><a class="text-danger dropdown-item d-flex align-items-center justify-content-between" href="#">
-                <span class="material-icons">
-                    logout
-                    </span>  
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out-icon lucide-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
                 Déconnexion
     
               </a></li>
@@ -84,6 +76,9 @@
     <div id="clearfix"></div>
 
     <div class="main-container" id="main-container">
+
+        <h1 class="text-secondary mb-4">Gestion des utilisateurs</h1>
+
         <div class="table-responsive shadow">
             <table class="table table-borderless mb-0 table-striped bg-white table-hover">
                 <thead class="text-secondary">
@@ -111,15 +106,13 @@
                         <td>05123</td>
                         <td>activé</td>
                         <td>
-                            <a href="" class="btn"><span class="material-icons text-primary">
-                                edit_note
-                                </span></a>
+                            <a href="" class="btn btn-light text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil-icon lucide-pencil"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>
+                            </a>
                         </td>
                         <td>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirmDelete">
-                                <span class="material-icons text-danger">
-                                    delete_forever
-                                </span>
+                            <button type="button" class="btn btn-light text-danger" data-bs-toggle="modal" data-bs-target="#confirmDelete">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2-icon lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>
                             </button>
                         </td>
                     </tr>
@@ -142,9 +135,7 @@
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary me-3" data-bs-dismiss="modal">Non</button>
               <button type="button" class="btn btn-danger d-flex align-items-center">
-                <span class="material-icons text-light">
-                    delete_forever
-                    </span> supprimer
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2-icon lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg> Supprimer
               </button>
             </div>
           </div>

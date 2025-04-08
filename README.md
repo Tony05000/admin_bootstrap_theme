@@ -1,3 +1,7 @@
 # admin_bootstrap_theme
 
-Simple admin layout based on Bootstrap and google font.
+Simple admin layout based on Bootstrap and Lucid.
+
+https://lucide.dev/icons/
+
+
