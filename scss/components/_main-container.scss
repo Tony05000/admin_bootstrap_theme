@@ -5,6 +5,7 @@
     width: calc( 100% - 250px);
     padding: 2rem;
     transition: .3s;
+    background: $mainContainerColor;
 }
 
 .main-container-full-width { width: 100% !important; }

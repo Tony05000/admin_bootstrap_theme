@@ -3,8 +3,11 @@
 @import 'vendor/reboot';
 @import 'vendor/mixins';
 @import 'vendor/bootstrap';
+@import 'vendor/bootstrap-patch';
 
 @import 'components/scrollbar';
 @import 'components/sidebar-menu';
 @import 'components/topbar-menu';
 @import 'components/main-container';
+
+body{ background: $mainContainerColor !important; }

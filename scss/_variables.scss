@@ -1,7 +1,9 @@
-$primary-color: rgb(10, 8, 17);
-$secondary-color: rgb(18, 21, 39);
+$primary-color: #fff;
 
-$sidebarMenuBgColor: linear-gradient( $primary-color, $secondary-color );
-$topbarMenuBgColor: linear-gradient(45deg, $primary-color, $secondary-color  );
-$scrollbarBgColor: $primary-color;
+$sidebarMenuBgColor: #fff;
+$topbarMenuBgColor: #ffffff;
+$mainContainerColor: #f3f3f3;
+
+$scrollbarBgColor: #999;
 $scrollbarColor: rgb(92, 92, 92);
+
